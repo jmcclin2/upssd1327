@@ -30,3 +30,14 @@ ssd1327.fill(0)
 ssd1327.blit(fbuf, 0, 0, 0)
 ssd1327.show()
 ```
+## Creating images with 4-bit Color-depth
+
+I used the excellent graphics program [Asperite](https://www.aseprite.org) to generate the 'logo_data' shown in the example above.
+
+There are two keys to generating imagery for the ssd1327:
+1. Create or import a 128x128 pixel image.
+2. Use a 4-bit color palette.
+3. Export the data in a compatible format.
+
+Load or create your 128x128 pixel image in Asperite.
+
