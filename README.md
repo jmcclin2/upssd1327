@@ -44,7 +44,7 @@ Here are the steps I used with Aseprite:
 1. Install the Lua Python export script (**4_bit_export.lua**) which can be found in the **/tools** directory of this repository.
 	- To find the folder in which Aseprite places its scripts, click on **File->Scripts->Open Scripts Folder**
 	- Copy **4_bit_export.lua** into this folder
-	- Restart Aseprite (may be required)
+	- You should not have to restart Aseprite, but you should exit the File menu and then reopen so the script can be found.
 
 2. Load or create a 4-bit color palette.  An example palette (**4_bit_color_palette.aseprite**) can be found in the **/tools** directory of this repository.
 
@@ -56,4 +56,4 @@ Here are the steps I used with Aseprite:
 
 ![Load color palette](/tools/aseprite_export_with_script.png)
 
-5. The exported Python script should contain rows of byte data which corresponds to your image and a single function definition, 'data' which will return a memoryview to this data.
+5. The exported Python script should contain rows of byte data which corresponds to your image and a single function definition, **data** which will return a memoryview to this data.  Import this script into your project and access the data using the **data** function, **logo_data.data()** for this example.
