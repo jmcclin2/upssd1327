@@ -62,12 +62,6 @@ local function exportFrame(frm)
 	local img = Image(sprite.spec)
 	img:drawSprite(sprite, frm)
 
-	--sAnswer = getBytesVariableName()
-	
-	--io.write("Palette Indexed Picture\n")
-	--io.write("begin palette\n")
-	--io.write(getPaletteData(sprite.palettes[1]))
-	--io.write("end palette\n")
 	io.write("_data =\\\n")
 	io.write(getIndexData(img, x, y, sprite.width, sprite.height))
 	io.write("\n_mvdata = memoryview(_data)\n\n")
@@ -79,11 +73,10 @@ end
 local dlg = Dialog()
 dlg:file{ id="exportFile",
           label="File",
-          title="Gameboy-Assembler Export",
+          title="4-Bit Python Image Export",
           open=false,
           save=true,
-        --filename= p .. fn .. "pip",
-          filetypes={"txt", "pip" }}
+          filetypes={ "py" }}
 dlg:check{ id="onlyCurrentFrame",
            text="Export only current frame",
            selected=true }
