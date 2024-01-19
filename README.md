@@ -39,5 +39,19 @@ There are two keys to generating imagery for the ssd1327:
 2. Use a 4-bit color palette.
 3. Export the data in a compatible format.
 
-Load or create your 128x128 pixel image in Asperite.
+Here are the steps I used with Aseprite:
 
+1. Load a 4-bit color palette.  An example palette (4_bit_color_palette.aseprite) can be found in the /tools directory of this repository.
+
+![Load color palette](/tools/aseprite_load_palette.png)
+
+2. Install and use the Lua export script (4_bit_export.lua) found in the /tools directory.
+	- To find the script install location, go to File->Scripts->Open Scripts Folder
+	- Copy 4_bit_export.lua into this folder
+	- Restart Aseprite (may be required)
+
+3. Load or create your 128x128 pixel image in Asperite.
+
+4. Export your image using the 4_bit_export.lua script; when prompted for 'select file' click on button and choose filename for exported Python data file.
+
+![Load color palette](/tools/aseprite_export_with_script.png)
