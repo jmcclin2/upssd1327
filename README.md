@@ -52,6 +52,8 @@ Here are the steps I used with Aseprite:
 
 3. Load or create your 128x128 pixel image in Asperite, make sure to use your 4-bit palette.
 
-4. Export your image data using the 4_bit_export.lua script; when prompted for 'select file' click on button and choose filename for exported Python data file.
+4. Export your image data using the 4_bit_export.lua script; when prompted for 'select file' click on button and choose filename for exported Python data file.  I used 'logo_data' as the name of the exported file for the example code shown above.
 
 ![Load color palette](/tools/aseprite_export_with_script.png)
+
+5. The exported Python script should contain rows of byte data which corresponds to your image and a single function definition, 'data' which will return a memoryview to this data.
