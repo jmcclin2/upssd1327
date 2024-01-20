@@ -32,7 +32,7 @@ ssd1327.show()
 ```
 ## Creating images with 4-bit Color-depth
 
-I used the excellent graphics program [Asperite](https://www.aseprite.org) to generate the 'logo_data' shown in the example above.
+I used the excellent graphics program [Aseprite](https://www.aseprite.org) to generate the 'logo_data' shown in the example above.
 
 There are three important points to remember when generating imagery for the ssd1327:
 1. Create or import a 128x128 pixel image.
